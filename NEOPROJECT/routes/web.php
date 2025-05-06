@@ -10,6 +10,7 @@ use App\Http\Controllers\ServicioMasivoController;
 use App\Http\Controllers\ServiciosController;
 use App\Http\Controllers\ComprasController;
 use App\Http\Controllers\CierreCajaController;
+use App\Http\Controllers\EmpleadoController;
 
 Route::get('/', function() {
     return redirect()->route('login');
@@ -44,9 +45,8 @@ Route::middleware('auth')->group(function() {
     // Cobranzas (CRUD)
     Route::resource('cobranzas', CobranzasController::class);
 
-    // Servicio Masivo
-    Route::get('servicio/masivo', [ServicioMasivoController::class, 'index'])
-         ->name('servicio.masivo');
+   
+    Route::resource('empleados', EmpleadoController::class);
 
     // Servicios (CRUD)
     Route::resource('servicios', ServiciosController::class);

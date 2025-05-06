@@ -12,9 +12,9 @@
                     ['url' => route('facturacion.masiva'), 'nombre' => 'Facturación Masiva', 'icono' => '💵'],
                     ['url' => route('estado.cuenta'),      'nombre' => 'Estado de Cuenta',   'icono' => '📄'],
                     ['url' => route('cobranzas.index'),    'nombre' => 'Cobranzas',          'icono' => '💰'],
-                    ['url' => route('servicio.masivo'),    'nombre' => 'Servicio Masivo',    'icono' => '🗂️'],
-                    ['url' => route('servicios.index'),    'nombre' => 'Servicios',          'icono' => '🛠️'],
-                    ['url' => route('compras.index'),      'nombre' => 'Gestión y Compras',  'icono' => '🛒'],
+                    /*['url' => route('servicio.masivo'),    'nombre' => 'Servicio Masivo',    'icono' => '🗂️'],*/
+                    ['url' => route('empleados.index'),     'nombre' => 'Empleados', 'icono' => '🛠️'],
+                    ['url' => route('compras.index'),      'nombre' => 'Perfil',  'icono' => '🛒'],
                     ['url' => route('cierre.caja'),        'nombre' => 'Cierre de Caja',     'icono' => '🧾'],
                 ];
             @endphp
